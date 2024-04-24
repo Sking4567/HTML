@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars</title>
+    <link href="CSS/Planet.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Mars</h1>
+        <img src="Images/Mars.png" alt="Mars" id="Mars">
+        <p id="message"> Mars Image</p>
+        <button id="Mars1">Normal view</button>
+        <button id="Mars2">Surface view</button>
+        <button id="Mars3">First Picture</button>
+        <p>Mars, often referred to as the "Red Planet" due to its rusty hue, has captivated human imagination for centuries. As Earth's neighboring planet, Mars shares similarities in its rocky terrain and polar ice caps, yet it boasts a unique landscape marked by towering volcanoes, vast canyons, and ancient riverbeds. The planet's thin atmosphere, composed primarily of carbon dioxide, lends an otherworldly charm to its surface, where dust storms can rage for weeks, obscuring the view of its barren deserts and rocky plains.</p>
+        
+        <p>In recent years, Mars has been the focus of extensive exploration efforts, with robotic missions seeking to unravel its mysteries and pave the way for potential human exploration. Landers and rovers have delved into the planet's geology, searching for signs of past water and assessing its potential habitability. Additionally, plans for crewed missions to Mars have sparked excitement and speculation, as humanity looks toward the possibility of establishing a presence on this distant world, expanding our horizons beyond the confines of Earth.</p>
+        
+        <p> Orbital period: 60,190 days<br>
+            Distance from Sun: 4.498 billion km<br>
+            Length of day: 16 hours and 6 minutes<br>
+            Radius: 24,622 km<br>
+            Gravity: 11.15 m/s²<br>
+            Surface area: 7.6183 × 10^9 km²<br>
+            Mass: 1.024 × 10^26 kg (17.147 M⊕)<br>
+            Number of Moons: 14<br>
+        </p>
+    </div>
+    <script>
+        document.getElementById("Mars1").onclick = function () {
+            document.getElementById("Mars").src = "Images/Mars.png";
+            document.getElementById("message").innerHTML = "Mars Image"
+        }
+        document.getElementById("Mars2").onclick = function () {
+            document.getElementById("Mars").src = "Images/marsSurface.jpg";
+            document.getElementById("message").innerHTML = "NASA’s Curiosity Mars rover captured evidence of layers that built up as windblown sand both accumulated and was scoured away at a location nicknamed “Las Claritas.”<br> This image was captured using Curiosity’s Mast Camera, or Mastcam, on May 19, 2022, the 3,478th Martian day, or sol, of the mission. Credit: NASA/JPL-Caltech/MSSS."
+        }
+        document.getElementById("Mars3").onclick = function () {
+            document.getElementById("Mars").src = "Images/firstMars.jpeg";
+            document.getElementById("message").innerHTML = "Taken by the Viking 1 lander shortly after it touched down on Mars, this image is the first photograph ever taken from the surface of Mars. It was taken on July 20, 1976. The primary objectives of the Viking mission, which was composed of two spacecraft, were to obtain high-resolution images of the Martian surface, characterize the structure and composition of the atmosphere and surface and search for evidence of life on Mars.Image Credit: NASA"
+        }
+    </script>
+</body>
+
+</html>

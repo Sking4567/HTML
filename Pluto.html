@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pluto</title>
+    <link href="CSS/Planet.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Pluto</h1>
+        <img src="Images/Pluto.png" alt="Pluto" id="Pluto">
+        <p id="message"> Pluto Image</p>
+        <button id="Pluto1">Normal view</button>
+        <button id="Pluto2">Globe view</button>
+        <button id="Pluto3">Surface view</button>
+        
+        <p>Pluto, once considered the ninth planet in our solar system, holds a special place in astronomical history as well as in the public imagination. Discovered in 1930 by astronomer Clyde Tombaugh, Pluto remained classified as the ninth planet for over seven decades until its reclassification as a "dwarf planet" by the International Astronomical Union (IAU) in 2006. Situated in the distant reaches of the Kuiper Belt, a region beyond Pluto filled with icy bodies, Pluto orbits the Sun in a highly elliptical and inclined path, taking about 248 Earth years to complete a single orbit.</p>
+        
+        <p>With a diameter of roughly 2,377 kilometers, Pluto is significantly smaller than the planets of the inner solar system, leading to its reclassification as a dwarf planet. Its small size, combined with its distance from the Sun, means that Pluto experiences extreme temperature fluctuations, with surface temperatures dropping to as low as -233 degrees Celsius (-387 degrees Fahrenheit). Despite its diminutive stature, Pluto boasts a diverse surface terrain, including icy plains, mountains, and perhaps even a subsurface ocean of liquid water beneath its frozen exterior.</p>
+        
+        <p>Pluto's status as a dwarf planet has not diminished its intrigue or scientific importance. In 2015, NASA's New Horizons spacecraft made a historic flyby of Pluto, providing humanity with the first up-close images and detailed measurements of this distant world. The data gathered by New Horizons revealed a surprisingly complex and dynamic world, with evidence of geological activity, atmospheric haze layers, and a diverse range of surface features. As we continue to study Pluto and other objects in the Kuiper Belt, we gain valuable insights into the formation and evolution of our solar system and the countless mysteries that await discovery in the depths of space.</p>
+        
+        <p> Orbital period: Approximately 248 Earth years<br>
+            Distance from Sun: Approximately 5.9 billion kilometers<br>
+            Length of day: Approximately 153 hours and 9 minutes<br>
+            Radius: Approximately 1,195 kilometers<br>
+            Gravity: Approximately 0.62 m/s²<br>
+            Surface area: Approximately 17.7 million square kilometers<br>
+            Mass: Approximately 1.309 × 10<sup>22</sup> kg (0.00218 M⊕)<br>
+            Number of Moons: 5</p>
+    </div>
+    <script>
+        document.getElementById("Pluto1").onclick = function () {
+            document.getElementById("Pluto").src = "Images/Pluto.png";
+            document.getElementById("message").innerHTML = "Pluto Image";
+        }
+        document.getElementById("Pluto2").onclick = function () {
+            document.getElementById("Pluto").src = "Images/Plutospace.jpg";
+            document.getElementById("message").innerHTML = "This high-resolution image captured by NASA's New Horizons spacecraft combines blue, red and infrared images taken by the Ralph/Multispectral Visual Imaging Camera (MVIC). The bright expanse is the western lobe of the 'heart,' informally called Sputnik Planum, which has been found to be rich in nitrogen, carbon monoxide and methane ices.";
+        }
+        document.getElementById("Pluto3").onclick = function () {
+            document.getElementById("Pluto").src = "Images/Plutosurface.jpg";
+            document.getElementById("message").innerHTML = "In this extended color image of Pluto taken by NASA's New Horizons spacecraft, rounded and bizarrely textured mountains, informally named the Tartarus Dorsa, rise up along Pluto's day-night terminator and show intricate but puzzling patterns of blue-gray ridges and reddish material in between. This view, roughly 330 miles (530 kilometers) across, combines blue, red and infrared images taken by the Ralph/Multispectral Visual Imaging Camera (MVIC) on July 14, 2015, and resolves details and colors on scales as small as 0.8 miles (1.3 kilometers).";
+        }
+    </script>
+</body>
+
+</html>

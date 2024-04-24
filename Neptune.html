@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neptune</title>
+    <link href="CSS/Planet.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Neptune</h1>
+        <img src="Images/Neptune.png" alt="Neptune" id="Neptune">
+        <p id="message"> Neptune Image</p>
+        <button id="Neptune1">Normal view</button>
+        <button id="Neptune2">Ring view</button>
+        <button id="Neptune3">Spot in Neptune</button>
+        
+        <p>Neptune, the eighth and farthest planet from the Sun in our solar system, is a fascinating world shrouded in mystery and intrigue. Named after the Roman god of the sea, Neptune's icy-blue hue reflects its frigid temperatures and its composition predominantly of water, ammonia, and methane ices. With an average distance of approximately 4.498 billion kilometers from the Sun, Neptune orbits far beyond Uranus, marking the boundary of the solar system before the vast expanse of interstellar space begins.</p>
+        
+        <p>One of Neptune's most notable features is its dynamic atmosphere, characterized by fast-moving winds, massive storms, and striking cloud patterns. The most famous of these storms is the Great Dark Spot, a massive swirling vortex similar in appearance to Jupiter's Great Red Spot. Although the Great Dark Spot has since dissipated, other storms and features continue to captivate astronomers, including the bright clouds and high-altitude haze layers that drift through Neptune's atmosphere.</p>
+        
+        <p>Neptune's moons and rings add to its allure as a celestial marvel. With at least 14 known moons, the largest of which is Triton, Neptune's satellites exhibit diverse characteristics, ranging from icy surfaces to complex geological features. Triton, in particular, stands out for its retrograde orbit, suggesting that it may have been captured by Neptune's gravitational pull from the Kuiper Belt, a region of icy bodies beyond Neptune's orbit. As we continue to study Neptune and its moons, we uncover more about the distant reaches of our solar system and the mysteries that lie within.</p>
+        
+        <p> Orbital period: 60,190 days<br>
+            Distance from Sun: 4.498 billion km<br>
+            Length of day: 16 hours and 6 minutes<br>
+            Radius: 24,622 km<br>
+            Gravity: 11.15 m/s²<br>
+            Surface area: 7.6183 × 10^9 km²<br>
+            Mass: 1.024 × 10^26 kg (17.147 M⊕)<br>
+            Number of Moons: 14<br></p>
+    </div>
+    <script>
+        document.getElementById("Neptune1").onclick = function () {
+            document.getElementById("Neptune").src = "Images/Neptune.png";
+            document.getElementById("message").innerHTML = "Neptune Image";
+        }
+        document.getElementById("Neptune2").onclick = function () {
+            document.getElementById("Neptune").src = "Images/NeptuneRing.jpg";
+            document.getElementById("message").innerHTML = "In Neptune's outermost ring, 39,000 miles out, material mysteriously clumps into three arcs. Voyager 2 acquired this image as it encountered Neptune in August of 1989.<br>JPL manages and controls the Voyager project for NASA's Office of Space Science.";
+        }
+        document.getElementById("Neptune3").onclick = function () {
+            document.getElementById("Neptune").src = "Images/Neptunespot.jpg";
+            document.getElementById("message").innerHTML = "This image of clouds in Neptune's atmosphere is the first that tests the accuracy of the weather forecast that was made eight days earlier to select targets for the Voyager narrow angle camera. Three of the four targeted features are visible in this photograph; all three are close to their predicted locations. The Great Dark Spot with its bright white companion is slightly to the left of center. The small bright Scooter is below and to the left, and the second dark spot with its bright core is below the Scooter. Strong eastward winds up to 400 mph cause the second dark spot to overtake and pass the larger one every five days. The spacecraft was 6.1 million kilometers (3.8 million miles) from the planet at the time of camera shuttering, and the images uses the orange, green and clear filters of the camera. The Voyager Mission is conducted by JPL for NASA's Office of Space Science and Applications.";
+        }
+    </script>
+</body>
+
+</html>

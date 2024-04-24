@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register</title>
+</head>
+<style>
+            body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            }
+
+            h1{
+                font-weight: 600;
+            }
+            h2{
+                font-weight:400;
+            }
+            label{
+                font-weight: 300;
+            }
+            p{
+                font-weight: 300;
+            }
+</style>
+
+<body style="background-color: #000000; font-family: 'Arial', sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin-right: 20px;">
+
+    <div style="flex: 1; text-align: center;">
+        <img src="Images/Login.jpg" center/cover no-repeat; height: fixed; position: left; alt="Solar Sytem" style="max-width: 100%; height: 100%; border-radius: 8px;">
+    </div>
+
+    <div style="flex: 1; max-width: 400px; padding: 50px; background-color: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-right: 10px;">
+        <h1 style="color: black; text-align: center;">Login</h1>
+
+        
+            <label for="username" style="color: black;">Username / Email Address:</label> 
+            
+            <input type="text" id="username" name="username" placeholder="22BCT0311" style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid black; border-radius: 4px;">
+
+            <label for="password" style="color: black;">Password:</label>
+            <input type="password" id="password" name="password" placeholder="*************" style="width: 100%; padding: 8px; margin-bottom: 20px; border: 1px solid black; border-radius: 4px;">
+
+            <button type="submit" style="background-color: black; color: orange; padding: 10px; width: 100%; border: none; border-radius: 4px; cursor: pointer;" id="loginForm">Login</button>
+        
+
+        <p style="color:black; text-align: center; margin-top: 20px;">Don't have an account? <a href="signup.html" style="color: orange; text-decoration: underline;">Sign up</a></p>
+        <p style="color:black; text-align: center;">Forgot password? <a href="#" style="color: orange; text-decoration: underline;">Reset it</a></p>
+        <br/>
+        <hr size="1" style="background-color:orange;">
+
+        <script>
+            document.getElementById('loginForm').onclick = function (event) {
+                var username = document.getElementById('username').value;
+                var password = document.getElementById('password').value;
+    
+                if (username === '' || password === '') {
+                    alert('Please fill in all the fields.');
+                    event.preventDefault(); 
+                }else if(username === 'shubham' || password === '000000') {
+    
+                    window.location.href = 'index2.html';
+                }else {
+                    alert("Please enter correct details");
+                }
+            }
+        </script>
+
+        <center>
+          <footer>
+            &copy; 2024 Solor System by Shubham Kansara 22BCT0311 Website
+          </footer>
+        </center>
+
+    </div>
+
+    
+</body>
+
+</html>
+

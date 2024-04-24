@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronomy-2</title>
+    <link href="CSS/Astronomy.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="planet-earth.svg">
+</head>
+<body>
+    <div class="container">
+        <h1 class="head" >Astronomy Course 2</h1>
+        <hr id="line1">
+        <nav class="sidenav">
+            <a href="CoursePage3.html" class="home-button" target="_top"><img src="Images/left with white circle.png" style="width: 40px; height: 40px;"></img></a>
+            <h2 class="head">Content</h2>
+            <button class="links" onclick="openVideo(event, 'Intro')" id="defaultOpen">Intro to Astronomy</button>
+            <button class="links" onclick="openVideo(event, 'history')">History</button>
+            <button class="links" onclick="openVideo(event, 'OA')">Observational Astronomy</button>
+            <button class="links" onclick="openVideo(event, 'TA')">Theoretical Astronomy</button>
+            <button class="links" onclick="openVideo(event, 'Cos')">Cosmology</button>
+        </nav>
+        <div class="frame" id="Intro">
+            <h2>Introduction to Astronomy:</h2>
+            <iframe width="700px" height="400px" src="https://www.youtube.com/embed/0rHUDWjR5gg?si=eQIpJsHcd28wU3q2" title="YouTube video player" frameborder="0" allowfullscreen nomorevideos></iframe>
+        </div>
+        <div class="frame" id="history">
+            <h2>History of Astronomy:</h2>
+            <iframe width="700px" height="400px" src="https://www.youtube.com/embed/JzK24xalyuM?si=grmX8sbkrdIkB0C6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="frame" id="OA">
+            <h2>Observational Astronomy:</h2>
+            <iframe width="700px" height="400px" src="https://www.youtube.com/embed/oQpKeW_7_NY?si=hVmkERBZLJrFeJVt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="frame" id="TA">
+            <h2>Theoretical Astronomy:</h2>
+            <iframe width="700px" height="400px" src="https://www.youtube.com/embed/luE0mPVhK9k?si=AoavsKq-mFjL2YAo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="frame" id="Cos">
+            <h2>Cosmology:</h2>
+            <iframe width="700px" height="400px" src="https://www.youtube.com/embed/U6M7_Pt0d14?si=bsN32E3Gl5HJ3ql-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+    <script>
+        function openVideo(evt, inp) {
+          var i, navcontent, links;
+          navcontent = document.getElementsByClassName("frame");
+          for (i = 0; i < navcontent.length; i++) {
+            navcontent[i].style.display = "none";
+          }
+          links = document.getElementsByClassName("links");
+          for (i = 0; i < links.length; i++) {
+            links[i].className = links[i].className.replace(" active", "");
+          }
+          document.getElementById(inp).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
+</html>

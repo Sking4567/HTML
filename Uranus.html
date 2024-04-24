@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uranus</title>
+    <link href="CSS/Planet.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Uranus</h1>
+        <img src="Images/Uranus.png" alt="Uranus" id="Uranus">
+        <p id="message"> Uranus Image</p>
+        <button id="Uranus1">Normal view</button>
+        <button id="Uranus2">Globe view</button>
+        <button id="Uranus3">Ring view</button>
+        
+        <p>Uranus, the seventh planet from the Sun and the third-largest in our solar system, possesses a distinct and intriguing character. Its most striking feature is its unique tilt—while most planets in the solar system have axial tilts that cause them to spin roughly perpendicular to their orbits, Uranus rotates on its side, almost as if it were rolling along its orbital path. This peculiar orientation gives rise to extreme seasonal variations, with each pole experiencing around 42 years of continuous sunlight followed by 42 years of darkness as Uranus orbits the Sun.</p>
+        
+        <p>With an average distance of approximately 2.871 billion kilometers from the Sun, Uranus is situated beyond the gas giants Jupiter and Saturn, in the realm of the ice giants. Despite its considerable distance from the Sun, Uranus still exhibits features typical of gas giants, including a predominantly hydrogen and helium atmosphere. Its bluish-green hue, which is the result of methane in its upper atmosphere absorbing red light, gives Uranus a distinct appearance in the night sky.</p>
+        
+        <p>Uranus possesses a diverse array of moons, rings, and a magnetic field, though not as prominent as those of its gas giant counterparts. It hosts at least 27 known moons, with the five largest—Miranda, Ariel, Umbriel, Titania, and Oberon—discovered by William Herschel in 1787. These moons exhibit a variety of sizes, compositions, and surface features, adding to the allure of Uranus as a celestial object worth exploring further. Despite being one of the less studied planets in our solar system, Uranus continues to captivate astronomers and researchers with its unique characteristics and mysteries waiting to be unraveled.</p>
+        
+        <p> Orbital period: 30,685.4 days<br>
+            Distance from Sun: 2.871 billion km<br>
+            Length of day: 17 hours and 14 minutes<br>
+            Radius: 25,362 km<br>
+            Gravity: 8.69 m/s²<br>
+            Surface area: 8.1156 × 10^9 km²<br>
+            Mass: 8.682 × 10^25 kg (14.536 M⊕)<br>
+            Number of Moons: 27</p>
+    </div>
+    <script>
+        document.getElementById("Uranus1").onclick = function () {
+            document.getElementById("Uranus").src = "Images/Uranus.png";
+            document.getElementById("message").innerHTML = "Venus Image";
+        }
+        document.getElementById("Uranus2").onclick = function () {
+            document.getElementById("Uranus").src = "Images/Uranusfirst.jpg";
+            document.getElementById("message").innerHTML = "This is an image of the planet Uranus taken by the spacecraft Voyager 2 in 1986. The Voyager project is managed for NASA by the Jet Propulsion Laboratory.";
+        }
+        document.getElementById("Uranus3").onclick = function () {
+            document.getElementById("Uranus").src = "Images/UranusRing.jpg";
+            document.getElementById("message").innerHTML = "An infrared composite image of the two hemispheres of Uranus obtained with Keck Telescope adaptive optics. The component colors of blue, green, and red were obtained from images made at near infrared wavelengths of 1.26, 1.62, and 2.1 microns respectively. The images were obtained on July 11 and 12, 2004. The North pole is at 4 o'clock.";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Planets Quiz - Page 1</title>
+<link rel="icon" type="image/x-icon" href="planet-earth.svg">
+<style>
+  body {
+    font-family: Poppins, sans-serif;
+    background-image: url("CSS/b4638aa06fdde51fcc6e4c28ae667369.jpeg");
+    background-size: 1512px ;
+    margin: 0;
+    padding: 20px;
+  }
+  .quiz-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .question {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  .options label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+  }
+  .options input[type="radio"] {
+    margin-right: 10px;
+    color: #ffffff;
+  }
+  .submit-button {
+    background-color: #ff5100;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  h1{
+    color: #ffffff;
+  }
+</style>
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Planets Quiz - Page 1</h1>
+    <div class="question">How many planets are there in the Solar System?</div>
+    <div class="options">
+      <label><input type="radio" name="q1" value="a">8</label>
+      <label><input type="radio" name="q1" value="b">9</label>
+      <label><input type="radio" name="q1" value="c">10</label>
+      <label><input type="radio" name="q1" value="d">11</label>
+    </div>
+    <div class="question">Which planet is known as the "Red Planet"?</div>
+    <div class="options">
+      <label><input type="radio" name="q2" value="a">Venus</label>
+      <label><input type="radio" name="q2" value="b">Mars</label>
+      <label><input type="radio" name="q2" value="c">Jupiter</label>
+      <label><input type="radio" name="q2" value="d">Saturn</label>
+    </div>
+    <div class="question">Which planet is the largest in the Solar System?</div>
+    <div class="options">
+      <label><input type="radio" name="q3" value="a">Mars</label>
+      <label><input type="radio" name="q3" value="b">Earth</label>
+      <label><input type="radio" name="q3" value="c">Jupiter</label>
+      <label><input type="radio" name="q3" value="d">Saturn</label>
+    </div>
+    <div class="question">What is the hottest planet in the Solar System?</div>
+    <div class="options">
+      <label><input type="radio" name="q4" value="a">Earth</label>
+      <label><input type="radio" name="q4" value="b">Venus</label>
+      <label><input type="radio" name="q4" value="c">Mars</label>
+      <label><input type="radio" name="q4" value="d">Mercury</label>
+    </div>
+    <button class="submit-button" onclick="submitPage1()">Next Page</button>
+  </div>
+
+  <script>
+    function submitPage1() {
+      const answersPage1 = {
+        q1: document.querySelector('input[name="q1"]:checked').value,
+        q2: document.querySelector('input[name="q2"]:checked').value,
+        q3: document.querySelector('input[name="q3"]:checked').value,
+        q4: document.querySelector('input[name="q4"]:checked').value,
+      };
+
+      let marksPage1 = 0;
+      if (answersPage1.q1 === 'b') {
+        marksPage1++;
+      }
+      if (answersPage1.q2 === 'b') {
+        marksPage1++;
+      }
+      if (answersPage1.q3 === 'c') {
+        marksPage1++;
+      }
+      if (answersPage1.q4 === 'b') {
+        marksPage1++;
+      }
+
+      window.location.href = `Quiz2.html?marksPage1=${marksPage1}`;
+    }
+  </script>
+</body>
+</html>

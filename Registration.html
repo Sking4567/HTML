@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+
+<body style="background-color: #000000; font-family: 'Arial', sans-serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin-right: 20px;">
+
+    <div style="flex: 1; text-align: center;">
+        <img src="Images/reg.jpg" alt="Solar System" style="max-width: 100%; height: auto; border-radius: 8px;">
+    </div>
+    
+    <div style="flex: 1; max-width: 400px; padding: 50px; background-color: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); margin-right: 10px;">
+        <h1 style="color: black; text-align: center;">Registration</h1>
+        <h4>Enter Your Details</h4>
+
+            <label for="Fullname" style="color: black;">Enter your Full Name:</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Shubham kansara,Eg." style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid black; border-radius: 4px;">
+
+            <label for="position" style="color: black;">Enter your Position:</label>
+            <input type="text" id="position" name="position" placeholder="Student" style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid black; border-radius: 4px;">
+
+            <label for="company" style="color: black;">Enter your Company:</label>
+            <input type="text" id="company" name="company" placeholder="ABC Corporation" style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid black; border-radius: 4px;">
+
+            <label for="email" style="color: black;">Enter your Email Address:</label>
+            <input type="text" id="email" name="email" placeholder="email@vitstudent.ac.in" style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid black; border-radius: 4px;">
+
+            <label for="phone" style="color: black;">Enter your Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="1234567890" style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid black; border-radius: 4px;">
+
+            <label for="address" style="color: black;">Enter your Address:</label>
+            <input type="text" id="address" name="address" placeholder="123, Main Street" style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid black; border-radius: 4px;height: 80px ; padding: auto; padding-top: 0%;">
+
+            <label for="country" style="color: black;">Choose your Country:</label>
+            <select id="country" name="country" style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid black; border-radius: 4px;">
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+            </select>
+
+            <label for="city" style="color: black;">Choose your City:</label>
+            <select id="city" name="city" style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid black; border-radius: 4px;">
+                <option value="Delhi">New Delhi</option>
+                <option value="Mumbai">Mumbai</option>
+                <option value="Kolkata">Kolkata</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Bangalore">Bangalore</option>
+            </select>
+
+            <label for="state" style="color: black;">Choose your State:</label>
+            <select id="state" name="state" style="width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid black; border-radius: 4px;">
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Tamil Nadu">Tamil Nadu</option>
+                <option value="Rajasthan">Rajasthan</option>
+                <option value="Delhi">Delhi</option>
+                
+            </select>
+
+            <button type="submit" style="background-color: orange; color: black; padding: 10px; width: 100%; border: none; border-radius: 4px; cursor: pointer;" id="loginForm">Register</button>
+    
+
+        <p style="color: black; text-align: center; margin-top: 20px;">Already have an account? <a href="login.html" style="color: orange; text-decoration: underline;">Login</a></p>
+
+        <br />
+        <hr size="1" style="background-color: orange;">
+
+        <script>
+            document.getElementById('loginForm').onclick = function (event) {
+    
+                    window.location.href = 'index2.html';
+            }
+        </script>
+        <center>
+            <footer>
+                &copy; 2024 Solar System by Shubham Kansara 22BCT0311 Website
+            </footer>
+        </center>
+
+    </div>
+
+</body>
+
+</html>

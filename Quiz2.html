@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Planets Quiz - Page 2</title>
+<link rel="icon" type="image/x-icon" href="planet-earth.svg">
+<style>
+  body {
+    font-family: Poppins, sans-serif;
+    background-image: url("CSS/b4638aa06fdde51fcc6e4c28ae667369.jpeg");
+    background-size: 1512px ;
+    margin: 0;
+    padding: 20px;
+  }
+  .quiz-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .question {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+  }
+  .options label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+  }
+  .options input[type="radio"] {
+    margin-right: 10px;
+    color: #ffffff;
+  }
+  .submit-button {
+    background-color: #ff5100;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  h1{
+    color: #ffffff;
+  }
+  .submit-button {
+    background-color: #ff5100;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  .result {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  .home-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff5100;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Plants Quiz - Page 2</h1>
+    <div class="question">Which planet has the shortest orbital period around the Sun?</div>
+    <div class="options">
+      <label><input type="radio" name="q11" value="a">Mercury</label>
+      <label><input type="radio" name="q11" value="b">Venus</label>
+      <label><input type="radio" name="q11" value="c">Jupiter</label>
+      <label><input type="radio" name="q11" value="d">Pluto</label>
+    </div>
+    <div class="question">Which planet has the most moons in our solar system?</div>
+    <div class="options">
+      <label><input type="radio" name="q12" value="a">Earth</label>
+      <label><input type="radio" name="q12" value="b">Jupiter</label>
+      <label><input type="radio" name="q12" value="c">Saturn</label>
+      <label><input type="radio" name="q12" value="d">Uranus</label>
+    </div>
+    <div class="question">Which planet has the most prominent rings in our solar system?</div>
+    <div class="options">
+      <label><input type="radio" name="q13" value="a">Uranus</label>
+      <label><input type="radio" name="q13" value="b">Neptune</label>
+      <label><input type="radio" name="q13" value="c">Saturn</label>
+      <label><input type="radio" name="q13" value="d">Earth</label>
+    </div>
+    <div class="question">Which planet is known for its prominent Great Red Spot?</div>
+    <div class="options">
+      <label><input type="radio" name="q14" value="a">Earth</label>
+      <label><input type="radio" name="q14" value="b">Neptune</label>
+      <label><input type="radio" name="q14" value="c">Jupiter</label>
+      <label><input type="radio" name="q14" value="d">Saturn</label>
+    </div>
+    <button class="submit-button" onclick="calculateScore()">Submit Quiz</button>
+    <div class="result" id="quizResult"></div>
+    <button onclick="window.location.href='index2.html'" class="home-button">Home</button>
+  </div>
+
+  <script>
+    function calculateScore() {
+      const answersPage2 = {
+        q11: document.querySelector('input[name="q11"]:checked'),
+        q12: document.querySelector('input[name="q12"]:checked'),
+        q13: document.querySelector('input[name="q13"]:checked'),
+        q14: document.querySelector('input[name="q14"]:checked')
+      };
+
+      if (!answersPage2.q11 || !answersPage2.q12 || !answersPage2.q13 || !answersPage2.q14) {
+        alert("Please answer all questions.");
+        return;
+      }
+
+      let marksPage2 = 0;
+      if (answersPage2.q11.value === 'a') {
+        marksPage2++;
+      }
+      if (answersPage2.q12.value === 'b') {
+        marksPage2++;
+      }
+      if (answersPage2.q13.value === 'c') {
+        marksPage2++;
+      }
+      if (answersPage2.q14.value === 'c') {
+        marksPage2++;
+      }
+
+      const urlParams = new URLSearchParams(window.location.search);
+      const marksPage1 = parseInt(urlParams.get('marksPage1')) || 0;
+
+      const totalScore = marksPage1 + marksPage2;
+      const resultElement = document.getElementById('quizResult');
+      resultElement.textContent = `Total Score: ${totalScore} /8`;
+    }
+  </script>
+</body>
+</html>
