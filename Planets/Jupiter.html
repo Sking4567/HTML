@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jupiter</title>
+    <link href="../CSS/Planet.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Jupiter</h1>
+        <img src="../Images/Jupiter.png" alt="Jupiter" id="Jupiter">
+        <p id="message"> Jupiter Image</p>
+        <button id="Jupiter1">Normal view</button>
+        <button id="Jupiter2">Great Red Spot of Jupiter</button>
+        <button id="Jupiter3">Original view</button>
+        
+        <p>Jupiter, the largest planet in our solar system, is a gas giant with awe-inspiring dimensions and characteristics. It boasts a staggering mass of approximately 1.898 × 10^27 kilograms, equivalent to about 317.8 times the mass of Earth (M⊕). Its immense gravity, measuring at 24.79 m/s², is over twice as strong as Earth's, exerting a powerful force on anything within its vicinity. With a radius of 69,911 kilometers, Jupiter is more than 11 times wider than Earth, making it a behemoth in comparison to our home planet.</p>
+        
+        <p>One of Jupiter's most remarkable features is its rapid rotation, completing a full spin on its axis in just 9 hours and 55 minutes. This quick rotation contributes to its distinctive banded appearance, with swirling clouds of different colors and compositions creating mesmerizing patterns across its surface. While Jupiter lacks a solid surface like Earth's, its atmosphere is composed mainly of hydrogen and helium, along with traces of other gases and compounds. These atmospheric dynamics result in a tumultuous environment, marked by powerful storms and the iconic Great Red Spot, a massive storm system that has persisted for centuries.</p>
+        
+        <p>Jupiter's influence extends far beyond its own physical boundaries, shaping the structure of the solar system itself. Its immense gravitational pull plays a crucial role in the dynamics of nearby celestial bodies, influencing the orbits of asteroids, comets, and even other planets. Furthermore, Jupiter hosts a vast retinue of moons, numbering at least 79 known satellites, each with its own unique characteristics and mysteries waiting to be unraveled. From its sheer size to its dynamic atmosphere and profound gravitational influence, Jupiter stands as a captivating testament to the wonders of our solar system.</p>
+        
+        <p>Orbital period: 4,332.82 days<br>
+            Distance from Sun: 778.57 million km<br>
+            Length of day: 9 hours and 55 minutes<br>
+            Radius: 69,911 km<br>
+            Gravity: 24.79 m/s²<br>
+            Surface area: 6.1419 × 10^10 km²<br>
+            Mass: 1.898 × 10^27 kg (317.8 M⊕)<br>
+            Number of Moons: 79</p>
+    </div>
+    <script>
+        document.getElementById("Jupiter1").onclick = function () {
+            document.getElementById("Jupiter").src = "../Images/Jupiter.png";
+            document.getElementById("message").innerHTML = "Jupiter Image"
+        }
+        document.getElementById("Jupiter2").onclick = function () {
+            document.getElementById("Jupiter").src = "../Images/jupiterSpot.jpg";
+            document.getElementById("message").innerHTML = "This dramatic view of Jupiter's Great Red Spot and its surroundings was obtained by Voyager 1 on Feb. 25, 1979, when the spacecraft was 5.7 million miles (9.2 million kilometers) from Jupiter. Cloud details as small as 100 miles (160 kilometers) across can be seen here. The colorful, wavy cloud pattern to the left of the Red Spot is a region of extraordinarily complex end variable wave motion. The Red Spot is 20,000 km long and has been followed by observers on Earth since the telescope was invented 300 years ago. It is a huge storm made visible by variations in the composition of the cloud particles and the amount of cloud cover. Winds in the outer part of the Red Spot reach 250 mph while the center remains quiescent. "
+        }
+        document.getElementById("Jupiter3").onclick = function () {
+            document.getElementById("Jupiter").src = "../Images/firstJupiter.jpg";
+            document.getElementById("message").innerHTML = "NASA'S Voyager 1 took this picture of the planet Jupiter on Saturday, Jan. 6, 1979, the first in its three-month-long, close-up investigation of the largest planet. The spacecraft, flying toward a March 5 closest approach, was 35.8 million miles (57.6 million kilometers) from Jupiter and 371.7 million miles (598.2 million kilometers) from Earth when the picture was taken. As the Voyager cameras begin their meteorological surveillance of Jupiter, they reveal a dynamic atmosphere with more convective structure than had previously been thought. While the smallest atmospheric features seen in this picture are still as large as 600 miles (1,000 kilometers) across, Voyager will be able to detect individual storm systems as small as 3 miles (5 kilometers) at closest approach. The Great Red Spot can be seen near the limb at the far right. Most of the other features are too small to be seen in terrestrial telescopes. This picture is really a combination of three images taken through color filters, then transmitted to Jet Propulsion Laboratory through the Deep Space Network's antennas, and assembled by JPL's Image Processing Lab. The Voyager Project is managed for NASA by Caltech's Jet Propulsion Laboratory.";
+        }
+    </script>
+</body>
+
+</html>

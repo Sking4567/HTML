@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="icon" type="image/x-icon" href="planet-earth.svg">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <span>S</span><span>O</span><span>L</span><span>A</span><span>R</span>
+                <span>S</span><span>Y</span><span>S</span><span>T</span><span>E</span><span>M</span>
+            </div>
+            <nav>
+                <a href="login.html"><button class="Login">Login</button></a>
+                <a href="signup.html"><button class="Signup">Sign Up</button></a>
+            </nav>
+        </header>
+        <main>
+            <div class="hero">
+                <div class="title">
+                    Our Solar System is Full of Mysteries!<br>
+                    Explore Now
+                </div>
+                <p>Click Get Started to Explore our Solar System</p>
+                <a href="login.html"><button class="button">Get Started</button></a>
+            </div>
+            <div class="stats">
+                <article>
+                    <h2>Planets</h2>
+                    <span>7</span>
+                </article>
+                <article>
+                    <h2>Central Star</h2>
+                    <span>Sun</span>
+                </article>
+                <article>
+                    <h2>Galaxy</h2>
+                    <span>Milky Way</span>
+                </article>
+            </div>
+            <br>
+            <br>
+            <div class="about">
+                <h1 style="color: orangered; font-weight: bold;">Our Solar System</h1>
+                <h3>Star System</h3>
+                <p>The Solar System is the gravitationally bound system of the Sun and the objects that orbit it. <br>
+                    It was formed 4.6 billion years ago when a dense region of a molecular cloud collapsed, forming the Sun and a protoplanetary disc.</p>
+            </div>
+                <br>
+            <div class="hero2">
+                <a><img src="Images/planet color.jpg" style="size-adjust: auto; width: 1512px;"></a>
+            </div>
+        </main>
+    </div>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close"  onclick="closePopup()">&times;</span>
+            <img src="Images/daniel-olah-dFA5XycbhoQ-unsplash.jpg" alt="Popup Image" class="popup-image">
+            <h2>Kindly Login/Signup to continue into the website</h2>
+            <button class="button" onclick="redirectToSignup()">Signup</button>
+            <button class="button" onclick="redirectToLogin()">Login</button>
+        </div>
+    </div>
+    <script>
+        window.onload = function() {
+            document.getElementById('popup').style.display = 'flex';
+        }
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+
+        function redirectToSignup() {
+            window.location.href = 'signup.html';
+        }
+
+        function redirectToLogin() {
+            window.location.href = 'login.html';
+        }
+    </script>
+    
+    <footer>
+        &copy; 2024 Solar Shubham Kansara 22BCT0311 Website
+    </footer>
+</body>
+
+</html>

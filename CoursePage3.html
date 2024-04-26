@@ -76,7 +76,7 @@
 
         .imagee{
             padding: 200px 0;
-            background-image: url("javier-miranda-NOBHX-kLLvc-unsplash.jpg");
+            background-image: url("Images/javier-miranda-NOBHX-kLLvc-unsplash.jpg");
             background-size: cover;
             color: #FFF;
         }
@@ -153,7 +153,7 @@
     <div class="container">
         <header>
             <div class="logo">
-                <a id="logo" href="index.html"><span>S</span><span>O</span><span>L</span><span>A</span><span>R</span> <span>S</span><span>Y</span><span>S</span><span>T</span><span>E</span><span>M</span></a>
+                <a id="logo" href="index2.html"><span>S</span><span>O</span><span>L</span><span>A</span><span>R</span> <span>S</span><span>Y</span><span>S</span><span>T</span><span>E</span><span>M</span></a>
                 </div>
             <nav>
                 <a href="planeta.html">Planets</a>
@@ -171,7 +171,6 @@
                 <select class="form-select" name="topic" id="cname">
                     <option value="" selected disabled>Select Topic</option>
                     <option value="astronomy">Astronomy</option>
-                    <option value="astrophysics">Astrophysics</option>
                 </select>
                 <select class="form-select" name="course-name" id="ctype">
                     <option value="" selected disabled>Select Course</option>
@@ -185,9 +184,9 @@
         <script>
             document.getElementById("formbutton").onclick = function () {
                 if((document.getElementById("cname").value == "astronomy") && (document.getElementById("ctype").value == "course1")){
-                    location.href = "Astronomy1.html";
+                    location.href = "./coursePages/Astronomy1.html";
                 }else if(document.getElementById("cname").value == "astronomy" && document.getElementById("ctype").value == "course2"){
-                    location.href = "Astronomy2.html"
+                    location.href = "./coursePages/Astronomy2.html"
                 }
             }
         </script>

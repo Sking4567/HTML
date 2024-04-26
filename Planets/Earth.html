@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Earth</title>
+    <link rel="stylesheet" href="../CSS/Planet.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Earth</h1>
+        <img src="../Images/earth.png" alt="Earth" id="Earth">
+        <p id="message">Eatrh Image</p>
+        <button id="Earth2">Normal View</button>
+        <button id="Earth1">First Picture</button>
+        <button id="Earth3">Earth From Moon</button>
+        <p>Earth is the third planet from the Sun and the only astronomical object known to harbor life. This is enabled by Earth being a water world, the only one in the Solar System sustaining liquid surface water. Almost all of Earth's water is contained in its global ocean, covering 70.8% of Earth's crust.</p>
+        
+        <p>From the majestic mountains to the serene seas, Earth is a mosaic of breathtaking landscapes and diverse ecosystems. It nurtures and sustains an intricate web of life, where every organism, from the tiniest microbe to the mightiest whale, plays a vital role in the intricate dance of existence. Yet, amidst its beauty, Earth reminds us of our responsibility to cherish and protect this precious planet for generations to come.</p>
+        <p>Distance from Sun: 149.6 million km<br>
+            Radius: 6,371 km<br>
+            Age: 4.543 billion years<br>
+            Mass: 5.972 × 10^24 kg<br>
+            Gravity: 9.807 m/s²<br>
+            Population: 788.84 crores (2021) World Bank<br>
+            Moon: Moon</p>
+    </div>
+    <script>
+        document.getElementById("Earth2").onclick = function () {
+            document.getElementById("Earth").src = "../Images/Earth.png";
+            document.getElementById("message").innerHTML = "Earth Image";
+        }
+        document.getElementById("Earth1").onclick = function () {
+            document.getElementById("Earth").src = "../Images/firstEarth.jpg";
+            document.getElementById("message").innerHTML = "First Television picture of Earth from space(TIROS-1),1960.";
+        }
+        document.getElementById("Earth3").onclick = function () {
+            document.getElementById("Earth").src = "../Images/EarthfMoon.jpeg";
+            document.getElementById("message").innerHTML = "First view of Earth from the Moon(Lunar Orbital-1),1966.";
+        }
+    </script>
+</body>
+
+</html>

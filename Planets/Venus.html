@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venus</title>
+    <link rel="stylesheet" href="../CSS/Planet.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Venus</h1>
+        <img src="../Images/Venus.png" alt="Venus" id="Venus">
+        <p id="Message1">Venus Image</p>
+        <button id="Venus2">Normal View</button>
+        <button id="Venus1">Surface View</button>
+        <button id="Venus3">Clouds of Venus</button>
+        <p>Venus is the second planet from the Sun. It is a terrestrial planet and is the closest in mass and size to its orbital neighbour Earth. Venus is notable for having the densest atmosphere of the terrestrial planets, composed mostly of carbon dioxide with a thick, global sulfuric acid cloud cover.</p>
+        <p>Venus is often called Earth's "sister planet" due to its similar size and composition. It has a thick, toxic atmosphere primarily composed of carbon dioxide with clouds of sulfuric acid, creating a runaway greenhouse effect that makes it the hottest planet in our solar system. Venus has a rocky surface covered in volcanic plains, mountains, and large impact craters, but its dense atmosphere obscures much of its geological features from direct observation.</p>
+        <p>Radius: 6,051.8 km<br>
+            Gravity: 8.87 m/s²<br>
+            Orbital period: 225 days<br>
+            Surface area: 460.2 million km²<br>
+            Distance from Sun: 108.2 million km<br>
+            Length of day: 243d 0h 0m<br>
+            Mass: 4.867 × 10^24 kg (0.815 M⊕)</p>
+    </div>
+    <script>
+        document.getElementById("Venus1").onclick = function () {
+            document.getElementById("Venus").src = "../Images/venusSurface.jpg";
+            document.getElementById("Message1").innerHTML = "The simulated hues are based on color images recorded by the Soviet Venera 13 and 14 spacecraft. The image was produced at the JPL Multimission Image Processing Laboratory by Eric De Jong, Jeff Hall and Myche McAuley, and is a single frame from a video released at a March 5, 1991, JPL news conference.";
+        }
+        document.getElementById("Venus2").onclick = function () {
+            document.getElementById("Venus").src = "../Images/Venus.png";
+            document.getElementById("Message1").innerHTML = "Venus Image";
+        }
+        document.getElementById("Venus3").onclick = function () {
+            document.getElementById("Venus").src = "../Images/venusCloud.jpg";
+            document.getElementById("Message1").innerHTML = "Venus Cloud Tops Viewed by Hubble. This is a NASA Hubble Space Telescope ultraviolet-light image of the planet Venus, taken on January 24 1995, when Venus was at a distance of 70.6 million miles (113.6 million kilometers) from Earth. Venus is covered with clouds made of sulfuric acid, rather than the water-vapor clouds found on Earth. These clouds permanently shroud Venus' volcanic surface, which has been radar mapped by spacecraft and from Earth-based telescope.<br>The image was taken with the Wide Field Planetary Camera-2, in PC mode. False color has been used enhance cloud features.";
+        }
+    </script>
+</body>
+
+</html>
